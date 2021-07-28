@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hallo Javascript</h1>
+    <h2>Hallo Eingabeelemente</h2>
+    <button type="button" onclick="doSomething();">
+        Hi
+    </button>
+
+    <input type="text" placeholder="Name">
+    
+    <br/>
+    <input type="radio" name="Jahreszeit" id="Frühling">
+    <label for="Frühling" >Frühling</lable>
+    <br/>
+    <input type="radio" name="Jahreszeit" id="Sommer">
+    <label for="Sommer" >Sommer</lable>
+    <br/>
+    <input type="radio" name="Jahreszeit" id="Herbst">
+    <label for="Herbst" >Herbst</label>
+    <br/>
+    <input type="radio" name="Jahreszeit" id="Winter">
+    <label for="Winter" >Winter</label>
+
+    <br/>
+    <input type="checkbox" id="müde">
+    <label for="müde" >Ich bin müde</label>
+    <br/>
+    <br/>
+
+    <button type="button" onclick="sayHallo();">
+        Sag Hallo
+    </button>
+    <br/>
+
+    <input type="text" placeholder="Username" id="username">
+
+    <script>
+        let a = 1;
+        function doSomething() {
+            alert("Hallo Besucher " + a);
+            a = a + 1;
+        }
+
+        
+        function sayHallo() {
+            let usernameTextBox = document.getElementById("username");
+            let username = usernameTextBox.value;
+            alert(username);
+        }
+    </script>
+
+    <script>
+        function sayHello() {
+            let nameTextBox = document.getElementById("name");
+            let name = nameTextBox.value
+            alert("Hallo " + name)
+        }
+    </script>
+
+    <br/>
+    <input type="text" placeholder="Dein Name" id="name">
+    <button type="button" onclick="sayHello();">
+        Begrüße mich!
+    </button>
+
+    <br/>
+    <input type="radio" name="Eis" id="showMe" checked>
+    <label for="showMe" >Vanilleeiscreme</label>
+    <br/>
+    <input type="radio" name="Eis" id="schoko">
+    <label for="schoko" >Schokoeiscreme</label>
+    <br/>
+
+    <button type="button" onclick="test();">
+        Welche Eiscreme magst du lieber?
+    </button>
+
+    <script>
+        function test() {
+            let showMeRadio = document.getElementById("showMe");
+            if (showMeRadio.checked) {
+                alert("Du magst lieber Vanilleeiscreme als Schokoeiscreme")
+            } else {
+                alert("Du magst also lieber Schokoeis?!")
+            }
+        }
+    </script>
+</body>
+</html>

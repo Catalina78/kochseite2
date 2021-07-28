@@ -1,0 +1,25 @@
+h1 {
+    text-decoration: black underline;
+}
+
+body {
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+    border: black 3px solid;
+    border-top-width: 6px;
+    border-bottom-width: 8px;
+}
+
+ul {
+    text-align: center;
+}
+
+h2 {
+    font-size: large;
+    box-shadow: 2xp 2px 10px gray;
+}
+
